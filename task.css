@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #F8F8FD;
+    font-family: sans-serif;
+    
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+nav {
+    height: 70px;
+    width: 100%;
+    background-color: rgb(255, 253, 253);
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 5px 8px gainsboro;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+nav>.logo{
+    height: 100%;
+    width: 10%;
+    /* border: 1px solid black; */
+}
+nav>.logo>img{
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+nav>ul{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+    text-transform: capitalize;
+}
+nav>ul>li{
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #DC0183;
+    cursor: pointer;
+    margin-right: 10px;
+}
+nav>ul>li:hover{
+background-color: #DC0183;
+color: white;
+transition: 0.2s;
+}
+
+#home {
+    height: calc(100vh - 70px);
+    margin-top: 70px;
+    width: 100%;
+    /* border: 2px solid red; */
+    padding: 20px;
+    display: flex;
+}
+
+#home>figure{
+    height: 80%;
+    width: 50%;
+    /* border: 1px solid black; */
+}
+#home>figure>img{
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+#home>.heroContent{
+    height: 80%;
+    width: 50%;
+    /* border: 1px solid black; */
+    padding: 0 30px;
+}
+#home>.heroContent>h1{
+    text-transform: capitalize;
+    font-weight: 900;
+    font-size: 60px;
+    margin-bottom: 20px;
+    color: #DC0183;
+}
+#home>.heroContent>a>button{
+    padding: 10px 30px;
+    text-transform: capitalize;
+    font-weight: 700;
+    border: 2px solid transparent;
+    background-color: #DC0183;
+    color: white;
+    border-radius: 4px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+#home>.heroContent>button:hover{
+    color: #DC0183;
+    background-color: white;
+    border: 2px solid #DC0183;
+    transition:  0.1s;
+}
+
+header {
+    padding: 10px 20px;
+}
+
+header>h1 {
+    font-size: 50px;
+}
+#productsWrapper {
+    min-height: 90vh;
+    max-height: 90vh;
+    width: 100%;
+    border: 2px solid rgb(60, 60, 57);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    gap: 50px;
+    overflow-y: scroll;
+    background-color: rgb(224, 207, 207);
+}
+
+/* css for javascript dynamic elements (card) */
+
+#productsWrapper>.card {
+    height: 350px;
+    width: 250px;
+    /* border: 2px solid black; */
+    background-color: white;
+    border-radius: 10px;
+}
+
+#productsWrapper>.card>img {
+    width: 100%;
+    height: 50%;
+    transform: scale(0.9);
+    cursor: pointer;
+}
+
+#productsWrapper>.card>img:hover {
+    transform: scale(1);
+    transition: 0.5s;
+}
+
+#productsWrapper>.card>h2 {
+    margin: 10px 20px;
+    font-size: 12px;
+}
+
+#productsWrapper>.card>p {
+    margin: 10px 20px;
+}
+
+#productsWrapper>.card>button {
+    background-color: grey;
+    color: white;
+    margin: 10px 0px 10px 70px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#productsWrapper>.card>button:hover {
+    background-color: rgb(98, 91, 91);
+    transform: scale(1.1);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+/* css  for cart  =================================================================================================*/
+#cart {
+    min-height: 70vh;
+    width: 100%;
+    border: 2px solid black;
+    background-color: rgb(224, 207, 207);
+}
+
+#cartCard {
+   
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    margin: 20px;
+
+}
+
+#cartCard>img {
+    /* width: 100%;
+    height: 50%; */
+    width: 100px;
+    height: 100px;
+    transform: scale(0.9);
+}
+
+#cartCard>h1 {
+    margin: 10px 20px;
+    font-size: 12px;
+}
+
+#cartCard>p {
+    margin: 10px 20px;
+    font-size: 15px;
+}
+
+
+/* all products price */
+#allProductsPrice{
+    /* border: 2px solid red; */
+   padding: 10px;
+   
+}
+
+#allProductsPrice>div{
+    /* border: 2px solid green; */
+    font-size: 20px;
+    font-weight: 700;
+
+    
+}
+
+#cartCard>button{
+    background-color: grey;
+    color: white;
+    margin: 10px 0px 10px 70px;
+    padding: 5px;
+    border-radius: 5px;
+}
